@@ -89,11 +89,6 @@ class TextField extends Input {
     this._needsManualCaret = window.navigator.userAgent.toLowerCase().indexOf('android') > -1;
 
     this.setText(element.value);
-
-    this.setSelectedRange({
-      start: caret.start,
-      length: caret.end - caret.start
-    });
   }
 
 
